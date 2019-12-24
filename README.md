@@ -11,10 +11,12 @@
 * MySQL WORKBENCH (Version:8.0.17)
 * Gluon Javafx Scene Builder (Version:8.1.1)
 * Visual Paradigm (Version:15.0)
-* ## the connection to server page (from client): 
+ # _____________________________________________________________
+* ## the client side :
+* #### the connection to server page (from client): 
  ![](image/clientSide/clientConnect.PNG)
-* ## the firsts page of the client for reader login (no registers in the system can search for books) :
+* #### the firsts page of the client for reader login (no registers in the system can search for books) :
  ![](image/clientSide/serch+login.PNG)
- * ## anyone can search for books in the system :
+ * #### anyone can search for books in the system :
  ![](image/clientSide/search.PNG)
  
