@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950" prefWidth="1600" styleClass="ancor" stylesheets="@firstWindow.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppStart.FirstController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="14.0" prefHeight="950.0" prefWidth="1600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="612.0" minWidth="10.0" prefWidth="356.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1010.0" minWidth="10.0" prefWidth="836.8000000000001" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1010.0" minWidth="10.0" prefWidth="371.5999633789062" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="441.6" minHeight="10.0" prefHeight="190.40000610351564" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="441.6" minHeight="10.0" prefHeight="361.8" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="530.0" minHeight="10.0" prefHeight="391.4" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <VBox alignment="CENTER" layoutY="30.0" prefHeight="406.0" prefWidth="303.0" style="-fx-background-color: #E5E4E285; -fx-background-radius: 0 100 0 0; -fx-border-color: black; -fx-border-radius: 0 100 0 0; -fx-border-width: 3;">
+                     <children>
+                        <Pane />
+                        <HBox prefHeight="64.0" prefWidth="258.0">
+                           <children>
+                              <Pane prefHeight="64.0" prefWidth="61.0" />
+                              <Label alignment="TOP_LEFT" prefHeight="66.0" prefWidth="122.0" text=" User Login " textAlignment="CENTER" textFill="WHITE" underline="true">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="93.0" prefHeight="44.0" prefWidth="258.0">
+                           <children>
+                              <Pane prefHeight="44.0" prefWidth="24.0" />
+                              <TextField fx:id="UsernameTxt" prefHeight="43.0" prefWidth="198.0" promptText="Username" style="-fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10 10 10 10;" />
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="19.0" prefWidth="297.0" />
+                        <HBox prefHeight="41.0" prefWidth="234.0">
+                           <children>
+                              <Pane prefHeight="42.0" prefWidth="21.0" />
+                              <PasswordField fx:id="PasswordTxt" prefHeight="42.0" prefWidth="202.0" promptText="Password" style="-fx-border-width: 2; -fx-border-radius: 10 10 10 10; -fx-border-color: black; -fx-background-radius: 10;" />
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="56.0" prefHeight="18.0" prefWidth="297.0" />
+                        <HBox prefHeight="52.0" prefWidth="242.0">
+                           <children>
+                              <Pane prefHeight="52.0" prefWidth="20.0" />
+                              <Button fx:id="LogInBtn" mnemonicParsing="false" onAction="#LogInBtnHandle" prefHeight="49.0" prefWidth="211.0" style="-fx-border-color: black; -fx-border-radius: 30;" styleClass="login" stylesheets="@firstWindow.css" text="Login">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Pane prefHeight="52.0" prefWidth="55.0" />
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="35.0" prefWidth="258.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="370.0" prefWidth="816.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="314.0" prefWidth="845.0">
+                     <children>
+                        <Pane prefHeight="42.0" prefWidth="799.0" />
+                        <HBox prefHeight="20.0" prefWidth="799.0" style="-fx-background-color: #000000; -fx-background-radius: 10 10 0 0;">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="846.0" text="&gt;&gt;Choose a keyword to search-by , type the book you're looking for. Results will be displayed in a new window." textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="74.0" prefWidth="799.0" style="-fx-background-color: #00000055; -fx-background-radius: 0 0 0 0;">
+                           <children>
+                              <Pane prefHeight="74.0" prefWidth="33.0" />
+                              <TextField fx:id="SearchTxt" prefHeight="38.0" prefWidth="622.0" promptText="Enter Keywords" style="-fx-background-radius: 10;" />
+                              <Pane prefHeight="74.0" prefWidth="11.0" />
+                              <Button fx:id="SearchBookBtn" mnemonicParsing="false" onAction="#SearchBookBtnHandle" prefHeight="41.0" prefWidth="146.0" styleClass="dark_b" stylesheets="@firstWindow.css" text="Search">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Pane prefHeight="74.0" prefWidth="11.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="799.0" style="-fx-background-color: #00000055; -fx-background-radius: 0 0 10 10;">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="124.0" text="Search By : " textFill="WHITE">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <MenuButton fx:id="SearchByBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#SearchByHandle" prefHeight="35.0" prefWidth="146.0" style="-fx-background-color: white;" text="Book Name" textFill="#030303">
+                                <items>
+                                    <MenuItem fx:id="BookNameBtn" mnemonicParsing="false" onAction="#BookNameBtnHandle" text="Book Name" />
+                                  <MenuItem fx:id="AuthorBtn" mnemonicParsing="false" onAction="#AuthorBtnHandle" text="Author                   " />
+                                    <MenuItem fx:id="CategoryBtn" mnemonicParsing="false" onAction="#CategoryBtnHandle" text="Category  " />
+                                  <MenuItem fx:id="DepatmentBtn" mnemonicParsing="false" onAction="#DepatmentBtnHandle" text="Department             " />
+                                </items>
+                              </MenuButton>
+                              <Pane prefHeight="42.0" prefWidth="174.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <VBox alignment="BOTTOM_RIGHT" prefHeight="950.0" prefWidth="1600.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnExit" alignment="BOTTOM_CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btnExitOnAction" prefHeight="44.0" prefWidth="130.0" text="Exit">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/image/exit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Pane prefHeight="394.0" prefWidth="36.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <GridPane fx:id="grido" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="274.0" minWidth="10.0" prefWidth="274.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="94.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="176.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="245.0" minHeight="10.0" prefHeight="245.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+.bodybg {
+	-fx-background-image: url("/image/004-library-b-1500x1.jpg");
+	 -fx-background-size: stretch;
+}
+.bodybg1 {
+	-fx-background-image: url("/image/ourBackground.jpg");
+	 -fx-background-size: stretch;
+}
+.glass_g {
+    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, white 100%),
+            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+.glass_g:pressed
+{
+     -fx-padding: 10 15 13 15;
+     -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+
+}
+.buttonbg {
+	-fx-background-image: url("/image/SearchLogo.png");
+	 -fx-background-size: stretch;
+}

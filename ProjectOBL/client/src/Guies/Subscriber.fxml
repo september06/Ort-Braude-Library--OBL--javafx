@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="1277.0" styleClass="GeneralBg" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppStart.ReaderCardController">
+   <children>
+      <Label layoutX="321.0" layoutY="147.0" prefHeight="17.0" prefWidth="0.0" />
+      <Label fx:id="subNameLabel" layoutX="229.0" layoutY="84.0" prefHeight="35.0" prefWidth="377.0" text="Harry Potter" textFill="#ffffffe3">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font></Label>
+      <ImageView fx:id="ProfilePic" fitHeight="222.0" fitWidth="173.0" layoutX="38.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="211.0" layoutY="429.0" />
+      <TabPane layoutX="651.0" layoutY="7.0" prefHeight="503.0" prefWidth="618.0" style="-fx-border-color: grey;" tabClosingPolicy="UNAVAILABLE" tabMinHeight="10.0">
+        <tabs>
+            <Tab text="Borrowings">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="420.0" prefWidth="616.0" style="-fx-background-color: white;">
+                     <children>
+                        <TableView fx:id="borrowingTable" prefHeight="358.0" prefWidth="618.0" AnchorPane.bottomAnchor="119.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="bIssueDateView" prefWidth="143.0" text="Issue Date" />
+                            <TableColumn fx:id="bookNameView" prefWidth="131.0" text="ISBN" />
+                              <TableColumn fx:id="dueDateView" prefWidth="172.0" text="Due Date" />
+                              <TableColumn fx:id="returndView" minWidth="5.0" prefWidth="215.0" text="Returned" />
+                          </columns>
+                        </TableView>
+                        <Text fx:id="borrowLabel" layoutX="14.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select a book and press &quot;Extend Button to complete extention " visible="false" wrappingWidth="371.1875">
+                           <font>
+                              <Font name="Book Antiqua Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="extendBtn" layoutX="434.0" layoutY="403.0" mnemonicParsing="false" onAction="#extendBtnHandle" prefHeight="45.0" prefWidth="101.0" styleClass="glass_g" stylesheets="@application.css" text="Extend" visible="false">
+                           <font>
+                              <Font name="Book Antiqua Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab style="fx-background-color: white;" text="Orders">
+               <content>
+                  <AnchorPane prefHeight="438.0" prefWidth="617.0" style="fx-background-color: black;">
+                     <children>
+                        <TableView fx:id="orderTable" layoutX="-1.0" layoutY="-1.0" prefHeight="359.0" prefWidth="618.0" style="-fx-background-color: white;">
+                          <columns>
+                              <TableColumn fx:id="orderedBookView" prefWidth="252.0" text="Ordered Book" />
+                            <TableColumn fx:id="orderDateView" prefWidth="150.0" text="Save Date" />
+                              <TableColumn fx:id="orderStatusView" prefWidth="182.0" text="Realised" />
+                          </columns>
+                           <opaqueInsets>
+                              <Insets bottom="100.0" />
+                           </opaqueInsets>
+                        </TableView>
+                        <AnchorPane layoutY="358.0" prefHeight="117.0" prefWidth="618.0" style="-fx-background-color: white;">
+                           <children>
+                              <Text fx:id="cancelLabel" layoutX="5.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select an order and press &quot;Cancel&quot; Button to cancel it" visible="false" wrappingWidth="488.13671875">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="cancelBtn" alignment="BASELINE_LEFT" layoutX="438.0" layoutY="45.0" mnemonicParsing="false" onAction="#cancelBtnHandle" prefHeight="41.0" prefWidth="110.0" styleClass="glass_g" stylesheets="@application.css" text="Cancel" visible="false">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Other Activities">
+               <content>
+                  <TableView fx:id="myHistoryTable" fixedCellSize="1.0" prefHeight="365.0" prefWidth="616.0">
+                    <columns>
+                      <TableColumn fx:id="activityNameView" prefWidth="280.0" text="Activity Name" />
+                        <TableColumn fx:id="issueDateView" prefWidth="336.0" text="Issue Date" />
+                    </columns>
+                  </TableView>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="EditProfileBtn" alignment="CENTER_RIGHT" layoutX="412.0" layoutY="344.0" mnemonicParsing="false" onAction="#EditProfileBtnHandle" prefHeight="35.0" prefWidth="158.0" styleClass="glass_g" stylesheets="@Client.css" text="Edit Profile" visible="false" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/image/edit.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TabPane layoutY="461.0" prefHeight="296.0" prefWidth="600.0" style="-fx-border-color: gray;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Reminders">
+            <content>
+              <AnchorPane prefHeight="154.0" prefWidth="595.0">
+                     <children>
+                        <TableView fx:id="reminderTable" prefHeight="265.0" prefWidth="595.0">
+                          <columns>
+                            <TableColumn fx:id="notissueDate" prefWidth="248.0" text="Issue Date" />
+                            <TableColumn fx:id="notMessage" prefWidth="346.0" text="Message" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ButtonBar layoutX="226.0" layoutY="305.0" />
+      <Label layoutX="226.0" layoutY="156.0" prefHeight="35.0" prefWidth="224.0" text="Username: " textFill="#ffffffe3">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="232.0" prefHeight="35.0" prefWidth="136.0" text="Card Status:" textFill="#ffffffe3">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="CardStatusHyperLink" layoutX="439.0" layoutY="224.0" onAction="#CardStatusHyperLinkHandle" prefHeight="45.0" prefWidth="136.0" text="Edit Status" textFill="#ffffffe3" underline="true" visible="false">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="userNameLable" layoutX="354.0" layoutY="161.0" prefHeight="32.0" prefWidth="251.0" text="seeker17" textFill="#ffffffe3">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="635.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="statusLab" layoutX="354.0" layoutY="233.0" prefHeight="26.0" prefWidth="75.0" text="Active" textFill="#ffffffe3">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="744.0" prefWidth="1157.0" styleClass="GeneralBg" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppStart.LibrarianController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="104.0" prefHeight="750.0" prefWidth="1207.0" styleClass="GeneralBg" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="572.0" minWidth="10.0" prefWidth="158.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="999.0" minWidth="10.0" prefWidth="999.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="246.0" minHeight="3.0" prefHeight="78.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="693.0" minHeight="10.0" prefHeight="659.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="77.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TabPane prefHeight="200.0" prefWidth="200.0" styleClass="WithoutLightsBg" stylesheets="@application.css" tabClosingPolicy="UNAVAILABLE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <tabs>
+                <Tab text="New Subsription">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane prefHeight="647.0" prefWidth="1276.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <GridPane prefHeight="329.0" prefWidth="971.0" style="-fx-border-insets: 5,5,5,5;" styleClass="WithoutLightsBg" stylesheets="@application.css">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="478.0" minWidth="2.0" prefWidth="28.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1253.0" minWidth="10.0" prefWidth="1129.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="128.0" minHeight="0.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="692.0" minHeight="10.0" prefHeight="535.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="58.0" minHeight="0.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="610.0" minWidth="0.0" prefWidth="0.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="610.0" minWidth="10.0" prefWidth="135.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="596.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="21.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="266.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="ID:" textFill="WHITE" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Family Name:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="26.0" prefWidth="148.0" text="Given Name:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Username:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Telephone:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Password:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Email:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="NewSubIdTextField" prefHeight="42.0" prefWidth="736.0" promptText="Subscriber's ID" GridPane.columnIndex="2">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="19.0" />
+                                                   </font>
+                                                </TextField>
+                                                <TextField fx:id="GivenNameTextField" prefHeight="42.0" prefWidth="736.0" promptText="Subscriber's Given/First Name" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="19.0" />
+                                                   </font>
+                                                </TextField>
+                                                <TextField fx:id="FamilyNameTextField" prefHeight="42.0" prefWidth="736.0" promptText="Subscriber's Family/Last Name" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="19.0" />
+                                                   </font>
+                                                </TextField>
+                                                <TextField fx:id="UserNameTextField" prefHeight="42.0" prefWidth="736.0" promptText="Subscriber's Username" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="19.0" />
+                                                   </font>
+                                                </TextField>
+                                                <TextField fx:id="UserPasswordTextField" prefHeight="42.0" prefWidth="736.0" promptText="Subscriber's Initial Password" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="19.0" />
+                                                   </font>
+                                                </TextField>
+                                                <TextField fx:id="TelephoneTextField" prefHeight="42.0" prefWidth="736.0" promptText="Subscriber's Telephone Number" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="19.0" />
+                                                   </font>
+                                                </TextField>
+                                                <TextField fx:id="EmailTextField" prefHeight="42.0" prefWidth="736.0" promptText="Subscriber's Email" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="19.0" />
+                                                   </font>
+                                                </TextField>
+                                                <Hyperlink fx:id="IdFormatInfo" onAction="#IdFormatInfoHandle" text="ID Format?" textFill="WHITE" underline="true" GridPane.columnIndex="4">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Hyperlink>
+                                                <Hyperlink fx:id="FirstNameInfo" onAction="#FirstNameInfoHandle" text="Name?" textFill="WHITE" underline="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Hyperlink>
+                                                <Hyperlink fx:id="LastNameInfo" onAction="#LastNameInfoHandle" text="Name?" textFill="WHITE" underline="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Hyperlink>
+                                                <Hyperlink fx:id="UserNameInfo" onAction="#UserNameInfoHandle" text="Username Format?" textFill="WHITE" underline="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Hyperlink>
+                                                <Hyperlink fx:id="GenratedCodeInfo" onAction="#GenratedCodeInfoHandle" text="Genrated Code?" textFill="WHITE" underline="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Hyperlink>
+                                                <Hyperlink fx:id="TelephoneFormatInfo" onAction="#TelephoneFormatInfoHandle" text="Telephone Format?" textFill="WHITE" underline="true" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Hyperlink>
+                                                <Hyperlink fx:id="EmailFormatInfo" onAction="#EmailFormatInfoHandle" text="Email Format?" textFill="WHITE" underline="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Hyperlink>
+                                                <Hyperlink fx:id="MoreHelpInfo" onAction="#MoreHelpInfoHandle" text="More Help?" textFill="WHITE" underline="true" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Hyperlink>
+                                                <Button fx:id="NewSubSubmitBtn" mnemonicParsing="false" onAction="#NewSubSubmitBtnHamdle" prefHeight="39.0" prefWidth="178.0" styleClass="glass_g" stylesheets="@Client.css" text="Submit" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="19.0" />
+                                                   </font>
+                                                </Button>
+                                                <TextField fx:id="FamilyNameTextField" prefHeight="41.0" prefWidth="591.0" promptText="Family Name" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="19.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </GridPane>
+                                          <Label prefHeight="46.0" prefWidth="826.0" text="All Fields Are Rquired." textFill="WHITE" underline="true" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="Book Antiqua Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label prefHeight="46.0" prefWidth="826.0" text="For explanation or help, click on the underlined texted next to each field." textFill="WHITE" underline="true" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="Book Antiqua Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Borrowing Book">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="622.0" prefWidth="1157.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <GridPane prefHeight="647.0" prefWidth="1276.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <GridPane prefHeight="329.0" prefWidth="971.0" style="-fx-border-insets: 5,5,5,5;">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="478.0" minWidth="2.0" prefWidth="28.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1253.0" minWidth="10.0" prefWidth="1129.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="128.0" minHeight="0.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="692.0" minHeight="10.0" prefHeight="535.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="58.0" minHeight="0.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="610.0" minWidth="10.0" prefWidth="31.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="610.0" minWidth="10.0" prefWidth="121.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="614.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="23.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="284.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Label text="ID:" textFill="WHITE" GridPane.columnIndex="1">
+                                                         <font>
+                                                            <Font name="Book Antiqua Bold" size="20.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="ISBN:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Book Antiqua Bold" size="20.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="SubscriberIdTextField" prefHeight="42.0" prefWidth="736.0" promptText="Subscriber's ID" GridPane.columnIndex="2">
+                                                         <font>
+                                                            <Font name="Book Antiqua" size="19.0" />
+                                                         </font>
+                                                      </TextField>
+                                                      <TextField fx:id="BookISBNBorrowingTextField" prefHeight="42.0" prefWidth="736.0" promptText="Copy ISBN" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Book Antiqua" size="19.0" />
+                                                         </font>
+                                                      </TextField>
+                                                      <Hyperlink fx:id="IdFormatInfo" onAction="#IdFormatInfoHandle" text="ID Format?" textFill="WHITE" underline="true" GridPane.columnIndex="4">
+                                                         <font>
+                                                            <Font name="Book Antiqua Bold" size="20.0" />
+                                                         </font>
+                                                      </Hyperlink>
+                                                      <Hyperlink fx:id="BookSerialInfo" onAction="#BookSerialInfoHandle" text="Book Serial?" textFill="WHITE" underline="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Book Antiqua Bold" size="20.0" />
+                                                         </font>
+                                                      </Hyperlink>
+                                                      <Hyperlink fx:id="MoreHelpBorrowingInfo" onAction="#MoreHelpBorrowingInfoHandle" text="More Help?" textFill="WHITE" underline="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font name="Book Antiqua Bold" size="20.0" />
+                                                         </font>
+                                                      </Hyperlink>
+                                                      <GridPane GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                        <columnConstraints>
+                                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="535.0" minWidth="10.0" prefWidth="532.0" />
+                                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="330.0" minWidth="10.0" prefWidth="140.0" />
+                                                        </columnConstraints>
+                                                        <rowConstraints>
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        </rowConstraints>
+                                                         <children>
+                                                            <Button fx:id="SubmitBorrowingBtn" mnemonicParsing="false" onAction="#SubmitBorrowingBtnHandle" onMouseClicked="#SubmitBorrowingBtnHandle" prefHeight="61.0" prefWidth="196.0" styleClass="glass_g" text="Submit" GridPane.columnIndex="1">
+                                                               <font>
+                                                                  <Font name="Book Antiqua" size="19.0" />
+                                                               </font></Button>
+                                                         </children>
+                                                      </GridPane>
+                                                      <TextField fx:id="BookSerialBorrowingTextField" prefHeight="42.0" prefWidth="736.0" promptText="Copy Serial" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="Book Antiqua" size="19.0" />
+                                                         </font>
+                                                      </TextField>
+                                                      <Label text="Copy ISBN:" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Book Antiqua Bold" size="20.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Serial Code:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="Book Antiqua Bold" size="20.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </GridPane>
+                                                <Label prefHeight="46.0" prefWidth="826.0" text="All Fields Are Rquired." textFill="WHITE" underline="true" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="46.0" prefWidth="826.0" text="For explanation or help, click on the underlined texted next to each field." textFill="WHITE" underline="true" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Returing Book">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="622.0" prefWidth="1157.0">
+                           <children>
+                              <GridPane prefHeight="647.0" prefWidth="1276.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <GridPane prefHeight="329.0" prefWidth="971.0" style="-fx-border-insets: 5,5,5,5;">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="478.0" minWidth="2.0" prefWidth="28.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1253.0" minWidth="10.0" prefWidth="1129.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="128.0" minHeight="0.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="692.0" minHeight="10.0" prefHeight="535.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="58.0" minHeight="0.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="610.0" minWidth="10.0" prefWidth="31.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="610.0" minWidth="10.0" prefWidth="125.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="610.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="23.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="284.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="ISBN:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="copyISBNtext" prefHeight="42.0" prefWidth="627.0" promptText="Copy ISBN" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="19.0" />
+                                                   </font>
+                                                </TextField>
+                                                <Hyperlink fx:id="BookSerialInfo" onAction="#BookSerialInfoHandle" text="Book Serial?" textFill="WHITE" underline="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Hyperlink>
+                                                <Hyperlink fx:id="MoreHelpReturingInfo" onAction="#MoreHelpReturingInfoHandle" text="More Help?" textFill="WHITE" underline="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Hyperlink>
+                                                <GridPane GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="535.0" minWidth="10.0" prefWidth="532.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="330.0" minWidth="10.0" prefWidth="140.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Button fx:id="SubmitReturingBtn" mnemonicParsing="false" onAction="#SubmitReturingBtnHandle" prefHeight="61.0" prefWidth="196.0" styleClass="glass_g" text="Submit" GridPane.columnIndex="1">
+                                                         <font>
+                                                            <Font name="Book Antiqua" size="19.0" />
+                                                         </font></Button>
+                                                   </children>
+                                                </GridPane>
+                                                <TextField fx:id="copySerialText" prefHeight="42.0" prefWidth="627.0" promptText="Copy Serial Code" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="19.0" />
+                                                   </font>
+                                                </TextField>
+                                                <Label text="Serial Code:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Label prefHeight="46.0" prefWidth="826.0" text="All Fields Are Rquired." textFill="WHITE" underline="true" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="Book Antiqua Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label prefHeight="46.0" prefWidth="826.0" text="For explanation or help, click on the underlined texted next to each field." textFill="WHITE" underline="true" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="Book Antiqua Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content></Tab>
+              </tabs>
+            </TabPane>
+            <HBox prefHeight="661.0" prefWidth="108.0" GridPane.rowIndex="1">
+               <children>
+                  <VBox prefHeight="661.0" prefWidth="158.0">
+                     <children>
+                        <Button fx:id="ShowAllSubscribersBtn" mnemonicParsing="false" onAction="#ShowAllSubscribersBtnHandle" prefHeight="21.0" prefWidth="158.0" text="Show All Subscribers">
+                           <VBox.margin>
+                              <Insets top="4.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
