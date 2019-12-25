@@ -15,6 +15,8 @@
  ![](image/clientSide/serch+login.PNG)
  * #### anyone can search for books in the system :
  ![](image/clientSide/search.PNG)
- * ### after the user login he will get  : 
+ * ### after the user (reder not worker or manger) login he will get  : 
   ![](image/clientSide/userlogin.PNG)
+  * ### if the user is an manger ( have another permissions than reder) :
+   ![](image/clientSide/manger.PNG)
  
