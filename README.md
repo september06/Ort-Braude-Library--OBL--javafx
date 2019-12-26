@@ -16,7 +16,16 @@
  * #### anyone can search for books in the system :
  ![](image/clientSide/search.PNG)
  * ### after the user (reder not worker or manger) login he will get  : 
-  ![](image/clientSide/userlogin.PNG)
-  * ### if the user is an manger ( have another permissions than reder) :
-   ![](image/clientSide/manger.PNG)
- 
+  ![](image/clientSide/userlogin.PNG) 
+ * ### and he can see his active and more : 
+ ![](image/clientSide/redercard.PNG	)
+ * ### if the user is an manger ( have another permissions than reder) :
+ ![](image/clientSide/manger.PNG)
+ * ### like add/remove worker ,book and reader type (acctive,blocked...) and reports:
+ ![](image/clientSide/worker.PNG)
+ ![](image/clientSide/newbook.PNG)
+ ![](image/clientSide/active.PNG)
+   
+ * ## the server side (connect to database) :
+ ![](image/clientSide/serverb4connect.PNG)
+ ![](image/clientSide/serverafterconnect.PNG)
