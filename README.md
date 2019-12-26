@@ -32,7 +32,25 @@
 * ## the database in MYSQL (some of the tables in our schema) :
 * #### users:
  ![](image/mySql/users.PNG)
-* ### books:
+* #### books:
 ![](image/mySql/books.PNG)
-* ### borrow:
+* #### borrow:
 ![](image/mySql/borrow.PNG)
+
+* ### UML diagrams: 
+* #### use case:
+ ![](image/Visual%20Para/use%20case.PNG)
+ * #### Requirement:
+ ![](image/Visual%20Para/Requirement.PNG)
+ * ### class digram : 
+ ![](image/Visual%20Para/class%20digram.PNG)
+ * #### and the rest: 
+ ![](image/Visual%20Para/sequnce.PNG)
+ ![](image/Visual%20Para/acive%20diagram.PNG.)
+ ![](image/Visual%20Para/package.PNG)
+ 
+ ![](image/Visual%20Para/Capture.PNG)
+ * ### and we do documentation file to the project: 
+  ![](image/doc.PNG)
+ 
+
