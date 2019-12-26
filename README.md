@@ -27,5 +27,12 @@
  ![](image/clientSide/active.PNG)
    
  * ## the server side (connect to database) :
- ![](image/clientSide/serverb4connect.PNG)
- ![](image/clientSide/serverafterconnect.PNG)
+ ![](image/ServerSide/serverb4connect.PNG)
+ ![](image/ServerSide/serverafterconnect.PNG)
+* ## the database in MYSQL (some of the tables in our schema) :
+* #### users:
+ ![](image/mySql/users.PNG)
+* ### books:
+![](image/mySql/books.PNG)
+* ### borrow:
+![](image/mySql/borrow.PNG)
