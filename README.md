@@ -38,14 +38,15 @@
 ![](image/mySql/borrow.PNG)
 
 * ### UML diagrams: 
-* #### use case:
+* #### Use case:
  ![](image/Visual%20Para/use%20case.PNG)
  * #### Requirement:
  ![](image/Visual%20Para/Requirement.PNG)
- * ### class digram : 
+ * ### Class digram : 
  ![](image/Visual%20Para/class%20digram.PNG)
- * #### and the rest: 
+  * ### Sequnce digram :
  ![](image/Visual%20Para/sequnce.PNG)
+ * #### and the rest:
  ![](image/Visual%20Para/acive%20diagram.PNG.)
  ![](image/Visual%20Para/package.PNG)
  
